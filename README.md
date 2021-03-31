@@ -14,8 +14,9 @@ O sistema de eventos foi feito com a intenção de facilitar a organização do 
  - Laravel v.8
  - BootStrap v.5
  
- Biblioteca:
+ Bibliotecas:
  - Compooser
+ - Blade
 
 #Como executar:
  - git clone https://github.com/luiz200/sistema-de-eventos.git

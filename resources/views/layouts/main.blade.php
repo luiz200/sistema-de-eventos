@@ -12,9 +12,9 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg" id='nav-g'>
         <div class="collapse navbar-collapse" id="navbar">
-            <a href="/" class="navbar-brand">Eventos</a>
+            <a href="/" class="navbar-brand"></a>
         </div>
         <ul class="navbar-nav">
             <li class="navbar-item">

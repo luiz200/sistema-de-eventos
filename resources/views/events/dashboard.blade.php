@@ -21,7 +21,7 @@
                 <tr>
                     <td scropt="row">{{ $loop->index +1 }}</td>
                     <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
-                    <td>{{ count($event-users) }}</td>
+                    <td>{{ count($event->users) }}</td>
                     <td>
                         <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a> 
                         <form action="/events/{{ $event->id }}" method="POST">
@@ -42,7 +42,7 @@
     <h1>Eventos que estou participando</h1>
 </div>
 <div class="col-md-10 offset-md-1 dashboard-events-container">
-    @if(count($eventsasparticipant)>0)
+    @if(count($events)>0)
     <table class="table">
         <thead>
             <tr>
@@ -53,11 +53,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($eventsasparticipant as $event)
+            @foreach($events as $event)
                 <tr>
                     <td scropt="row">{{ $loop->index +1 }}</td>
                     <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
-                    <td>{{ count($event-users) }}</td>
+                    <td>{{ count($event->users) }}</td>
                     <td>
                         <form action="/events/leave/{{ $event->id }}" method="POST">
                             @csrf

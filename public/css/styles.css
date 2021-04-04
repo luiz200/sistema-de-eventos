@@ -11,7 +11,6 @@ body {
 
 header {
   background-color: #FFF;
-  border-bottom: 1px solid #CCC;
 }
 
 .row {
@@ -52,23 +51,11 @@ header {
 }
 
 /* navbar */
-#navbar img {
-  width: 40px;
+#nav-g{
+  background: #000000;
 }
-
-#navbar {
-  justify-content: space-between;
-  background-color: #FFF;
-  padding: 5px 0;
-}
-
-#navbar a {
-  font-size: 14px;
-  color: #757575;
-}
-
-#navbar a:hover {
-  color: #F2A340;
+#nav-g a{
+  color: #C28008;
 }
 
 /* Search Container */
@@ -76,8 +63,9 @@ header {
   background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 200px;
   padding: 50px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -90,6 +78,10 @@ header {
 #search-container form {
   width: 50%;
   margin: 0 auto;
+}
+#search{
+  background: #00000000;
+  color: #FFF ;
 }
 
 /* Events list */
@@ -230,7 +222,7 @@ header {
 /* footer */
 footer {
   text-align: center;
-  background-color: #353E48;
+  background-color: #000000;
   color: #FFF;
   padding: 30px;
   position: absolute;
